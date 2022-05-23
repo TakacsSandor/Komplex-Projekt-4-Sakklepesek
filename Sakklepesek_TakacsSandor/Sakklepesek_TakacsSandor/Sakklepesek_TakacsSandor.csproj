@@ -94,5 +94,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kepek\bastya_feher.png" />
+    <Resource Include="Kepek\bastya_fekete.png" />
+    <Resource Include="Kepek\futo_feher.png" />
+    <Resource Include="Kepek\futo_fekete.png" />
+    <Resource Include="Kepek\kiralyno_feher.png" />
+    <Resource Include="Kepek\kiralyno_fekete.png" />
+    <Resource Include="Kepek\kiraly_feher.png" />
+    <Resource Include="Kepek\kiraly_fekete.png" />
+    <Resource Include="Kepek\lovag_feher.png" />
+    <Resource Include="Kepek\lovag_fekete.png" />
+    <Resource Include="Kepek\paraszt_feher.png" />
+    <Resource Include="Kepek\paraszt_fekete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

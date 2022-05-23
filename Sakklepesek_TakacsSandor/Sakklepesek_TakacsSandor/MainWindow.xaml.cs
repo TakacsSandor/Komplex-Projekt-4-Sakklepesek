@@ -49,6 +49,25 @@ namespace Sakklepesek_TakacsSandor
                     Grid.SetColumn(mezok[i, j], j);
                 }
             }
+
+            for (int i = 0; i < tablaMeret; i++)
+            {
+                for (int j = 0; j < tablaMeret; j++)
+                {
+                    if (j % 2 == 1 && i % 2 == 1)
+                    {
+                        mezok[i, j].Background = Brushes.White;
+                    }
+                    else if (j % 2 == 0 && i % 2 == 0)
+                    {
+                        mezok[i, j].Background = Brushes.White;
+                    }
+                    else
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                }
+            }
         }
     }
 }

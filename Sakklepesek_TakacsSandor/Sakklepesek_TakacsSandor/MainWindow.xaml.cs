@@ -22,6 +22,7 @@ namespace Sakklepesek_TakacsSandor
     {
         int tablaMeret = 8;
         Button[,] mezok;
+        string[] oszlopJelek = { "A", "B", "C", "D", "E", "F", "G", "H" };
         public MainWindow()
         {
             InitializeComponent();
@@ -68,6 +69,25 @@ namespace Sakklepesek_TakacsSandor
                     }
                 }
             }
+        }
+
+        private int[] Holvan(Button gomb)
+        {
+            int[] koordinatak = { -1, -1 };
+            for (int i = tablaMeret - 1; i >= 0; i--)
+            {
+                for (int j = tablaMeret - 1; j >= 0; j--)
+                {
+                    if (mezok[i,j].Equals(gomb))
+                    {
+                        i = 7 - i;
+                        koordinatak[0] = i;
+                        koordinatak[1] = j;
+                        return koordinatak;
+                    }
+                }
+            }
+            return koordinatak;
         }
     }
 }

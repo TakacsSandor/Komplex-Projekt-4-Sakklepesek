@@ -166,7 +166,7 @@ namespace Sakklepesek_TakacsSandor
 
         }
 
-        private void Hely_Megjelölés(int x, int y)
+        private void Hely_Megjeloles(int x, int y)
         {
 
             if (x >= 0 && x <= 7 && y >= 0 && y <= 7)
@@ -176,7 +176,41 @@ namespace Sakklepesek_TakacsSandor
             }
         }
 
+        private void Vilagos_Gyalog(int x, int y)
+        {
+            List<int[]> Vilagos_Gyalog_lephet = new List<int[]>();
+            x = x + 1;
+            koordinata.Text = x.ToString() + "-" + y.ToString();
+            lepesek_helyei.Items.Clear();
+            int[] poz = new int[2];
 
+            if (x >=1)
+            {
+                if (x == 1)
+                {
+                    poz[0] = x + 2;
+                    poz[1] = y;
+                    Vilagos_Gyalog_lephet.Add(poz);
+                    Hely_Megjeloles(poz[0], poz[1]);
+                }
+
+                poz[0] = x + 1;
+                poz[1] = y - 1;
+                Vilagos_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+
+                poz[0] = x + 1;
+                poz[1] = y;
+                Vilagos_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+
+                poz[0] = x + 1;
+                poz[1] = y + 1;
+                Vilagos_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
+
+        }
 
         private void Forgatas(int x, int y)
         {

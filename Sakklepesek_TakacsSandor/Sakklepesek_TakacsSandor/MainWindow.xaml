@@ -218,6 +218,7 @@
                 <Image Source="Kepek/paraszt_fekete.png" Stretch="Fill" Height="30" Width="30"/>
             </ComboBoxItem>
         </ComboBox>
+        <TextBox x:Name="koordinata" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="542,14,0,0"/>
 
 
     </Grid>

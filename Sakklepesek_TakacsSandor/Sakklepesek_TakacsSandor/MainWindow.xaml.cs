@@ -108,6 +108,14 @@ namespace Sakklepesek_TakacsSandor
             }
         }
 
+        private void Forgatas(int x, int y)
+        {
+            if (mezok[x, y].Background != Brushes.Black)
+                mezok[x, y].Background = Brushes.LightBlue;
+            else
+                mezok[x, y].Background = Brushes.LightBlue;
+        }
+                
         private void figura_kivalasztas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (figura_kivalasztas.SelectedItem == vilagos_vezer)

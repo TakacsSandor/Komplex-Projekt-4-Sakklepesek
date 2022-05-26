@@ -192,6 +192,10 @@ namespace Sakklepesek_TakacsSandor
             {
                 Sotet_Gyalog(x, y);
             }
+            else if (kijelolt_figura.Text == "Világos király")
+            {
+                Kiraly(x, y);
+            }
         }
 
         private void Vilagos_Gyalog(int x, int y)
@@ -258,6 +262,28 @@ namespace Sakklepesek_TakacsSandor
             }
         }
 
+        private void Kiraly(int x, int y)
+        {
+            List<int[]> Kiraly_Lephet = new List<int[]>();
+            x = 8 - x;
+            koordinata.Text = x.ToString() + "- " + y.ToString();
+            int[] poz = new int[2];
+
+            for (int i = -1; i < 2; i++)
+            {
+                for (int j = -1; j < 2; j++)
+                {
+                    poz[0] = x + i;
+                    poz[1] = y + j;
+                    Kiraly_Lephet.Add(poz);
+                    if (!(poz[0] == x && poz[1] == y))
+                    {
+                        Hely_Megjeloles(poz[0], poz[1]);
+                    }
+                }
+            }
+
+        }
 
 
         private void Forgatas(int x, int y)

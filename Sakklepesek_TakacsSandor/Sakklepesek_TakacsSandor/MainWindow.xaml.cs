@@ -47,6 +47,7 @@ namespace Sakklepesek_TakacsSandor
                     mezok[i, j] = new Button();
                     tabla.Children.Add(mezok[i, j]);
                     mezok[i, j].Click += KoordinataValasztas;
+                    mezok[i, j].Click += GombokraKivalasztottFigura;
                     Grid.SetRow(mezok[i, j], i);
                     Grid.SetColumn(mezok[i, j], j);
                 }
@@ -98,14 +99,71 @@ namespace Sakklepesek_TakacsSandor
             int y = Holvan(aktualis)[1];
             x = 8 - x;
             katintott_pozicio.Text = oszlopJelek[y] + x.ToString();
-            if (kijelolt_figura.Text.Length == 0)
-            {
-                MessageBox.Show("Válassz figurát");
-            }
-            else
-            {
+        }
 
+        private void GombokraKivalasztottFigura(object sender, RoutedEventArgs e)
+        {
+            Button aktualis = sender as Button;
+            int x = Holvan(aktualis)[0];
+            int y = Holvan(aktualis)[1];
+
+            if (kijelolt_figura.Text == "Világos vezér")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/kiralyno_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
             }
+            else if (kijelolt_figura.Text == "Világos király")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/kiraly_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+            else if (kijelolt_figura.Text == "Világos futó")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/futo_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+            else if (kijelolt_figura.Text == "Világos huszár")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/lovag_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+            else if (kijelolt_figura.Text == "Világos bástya")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/bastya_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+            else if (kijelolt_figura.Text == "Világos gyalog")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/paraszt_feher.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+            else if (kijelolt_figura.Text == "Sötét gyalog")
+            {
+                aktualis.Content = new Image
+                {
+                    Source = new BitmapImage(new Uri("Kepek/paraszt_fekete.png", UriKind.Relative)),
+                    VerticalAlignment = VerticalAlignment.Center
+                };
+            }
+
         }
 
         private void Forgatas(int x, int y)

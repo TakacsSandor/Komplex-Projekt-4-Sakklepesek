@@ -195,7 +195,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox x:Name="figura_kivalasztas" HorizontalAlignment="Left" Margin="89,14,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="figura_kivalasztas" HorizontalAlignment="Left" Margin="89,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="figura_kivalasztas_SelectionChanged">
             <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_vezer">
                 <Image Source="Kepek/kiralyno_feher.png" Stretch="Fill" Height="30" Width="30"/>
             </ComboBoxItem>

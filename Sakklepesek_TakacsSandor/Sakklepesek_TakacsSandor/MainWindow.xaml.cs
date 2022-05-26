@@ -89,5 +89,37 @@ namespace Sakklepesek_TakacsSandor
             }
             return koordinatak;
         }
+
+        private void figura_kivalasztas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (figura_kivalasztas.SelectedItem == vilagos_vezer)
+            {
+                kijelolt_figura.Text = "Világos vezér";
+            }
+            else if (figura_kivalasztas.SelectedItem == vilagos_kiraly)
+            {
+                kijelolt_figura.Text = "Világos király";
+            }
+            else if (figura_kivalasztas.SelectedItem == vilagos_futo)
+            {
+                kijelolt_figura.Text = "Világos futó";
+            }
+            else if (figura_kivalasztas.SelectedItem == vilagos_huszar)
+            {
+                kijelolt_figura.Text = "Világos huszár";
+            }
+            else if (figura_kivalasztas.SelectedItem == vilagos_bastya)
+            {
+                kijelolt_figura.Text = "Világos bástya";
+            }
+            else if (figura_kivalasztas.SelectedItem == vilagos_gyalog)
+            {
+                kijelolt_figura.Text = "Világos gyalog";
+            }
+            else if (figura_kivalasztas.SelectedItem == sotet_gyalog)
+            {
+                kijelolt_figura.Text = "Sötét gyalog";
+            }
+        }
     }
 }

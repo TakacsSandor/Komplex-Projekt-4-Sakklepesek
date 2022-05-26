@@ -48,6 +48,7 @@ namespace Sakklepesek_TakacsSandor
                     tabla.Children.Add(mezok[i, j]);
                     mezok[i, j].Click += KoordinataValasztas;
                     mezok[i, j].Click += GombokraKivalasztottFigura;
+                    mezok[i, j].Click += Lepes_Lehetosegek_Beszinezese;
                     Grid.SetRow(mezok[i, j], i);
                     Grid.SetColumn(mezok[i, j], j);
                 }
@@ -176,6 +177,23 @@ namespace Sakklepesek_TakacsSandor
             }
         }
 
+        private void Lepes_Lehetosegek_Beszinezese(object sender,RoutedEventArgs e)
+        {
+            Button aktualis = sender as Button;
+            int x = Holvan(aktualis)[0];
+            int y = Holvan(aktualis)[1];
+            x = 8 - x;
+
+            if (kijelolt_figura.Text == "Világos gyalog")
+            {
+                Vilagos_Gyalog(x, y);
+            }
+            else if (kijelolt_figura.Text == "Sötét gyalog")
+            {
+                Sotet_Gyalog(x, y);
+            }
+        }
+
         private void Vilagos_Gyalog(int x, int y)
         {
             List<int[]> Vilagos_Gyalog_lephet = new List<int[]>();
@@ -239,6 +257,8 @@ namespace Sakklepesek_TakacsSandor
 
             }
         }
+
+
 
         private void Forgatas(int x, int y)
         {

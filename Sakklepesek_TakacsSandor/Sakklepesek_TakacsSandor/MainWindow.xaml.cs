@@ -166,6 +166,18 @@ namespace Sakklepesek_TakacsSandor
 
         }
 
+        private void Hely_Megjelölés(int x, int y)
+        {
+
+            if (x >= 0 && x <= 7 && y >= 0 && y <= 7)
+            {
+                lepesek_helyei.Items.Add(oszlopJelek[7 - x] + "-" + (8 - y).ToString());
+                Forgatas(7 - x, y);
+            }
+        }
+
+
+
         private void Forgatas(int x, int y)
         {
             if (mezok[x, y].Background != Brushes.Black)

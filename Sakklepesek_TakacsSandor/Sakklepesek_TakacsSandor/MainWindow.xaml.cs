@@ -179,7 +179,7 @@ namespace Sakklepesek_TakacsSandor
         private void Vilagos_Gyalog(int x, int y)
         {
             List<int[]> Vilagos_Gyalog_lephet = new List<int[]>();
-            x = x + 1;
+            x = 8 - x;
             koordinata.Text = x.ToString() + "-" + y.ToString();
             lepesek_helyei.Items.Clear();
             int[] poz = new int[2];
@@ -209,7 +209,35 @@ namespace Sakklepesek_TakacsSandor
                 Vilagos_Gyalog_lephet.Add(poz);
                 Hely_Megjeloles(poz[0], poz[1]);
             }
+        }
 
+        private void Sotet_Gyalog(int x, int y)
+        {
+            List<int[]> Sotet_Gyalog_lephet = new List<int[]>();
+            x = 8 - x;
+            koordinata.Text = x.ToString() + "- " + y.ToString();
+
+            int[] poz = new int[2];
+
+            if (x <= 6)
+            {
+                lepesek_helyei.Items.Clear();
+                poz[0] = x - 1;
+                poz[1] = y;
+                Sotet_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+
+                poz[0] = x - 1;
+                poz[1] = y - 1;
+                Sotet_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+
+                poz[0] = x - 1;
+                poz[1] = y + 1;
+                Sotet_Gyalog_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+
+            }
         }
 
         private void Forgatas(int x, int y)

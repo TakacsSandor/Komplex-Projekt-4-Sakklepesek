@@ -196,8 +196,26 @@
             </Label.RenderTransform>
         </Label>
         <ComboBox x:Name="figura_kivalasztas" HorizontalAlignment="Left" Margin="89,14,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem HorizontalAlignment="Left" Width="118">
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_vezer">
                 <Image Source="Kepek/kiralyno_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_kiraly">
+                <Image Source="Kepek/kiraly_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_futo">
+                <Image Source="Kepek/futo_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_huszar">
+                <Image Source="Kepek/lovag_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_bastya">
+                <Image Source="Kepek/bastya_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_gyalog">
+                <Image Source="Kepek/paraszt_feher.png" Stretch="Fill" Height="30" Width="30"/>
+            </ComboBoxItem>
+            <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="sotet_gyalog">
+                <Image Source="Kepek/paraszt_fekete.png" Stretch="Fill" Height="30" Width="30"/>
             </ComboBoxItem>
         </ComboBox>
 

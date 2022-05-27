@@ -512,6 +512,27 @@ namespace Sakklepesek_TakacsSandor
                 }
             }
 
+            //Balra átló
+            int yy1 = y - 1;
+            for (int i = x + 1; i < 8; i++)
+            {
+                poz[0] = i;
+                poz[1] = yy1--;
+                Vezer_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
+
+            int yy2 = y + 1;
+            for (int i = x - 1; i >= 0; i--)
+            {
+                poz[0] = i;
+                poz[1] = yy2++;
+                if (poz[1] < 8)
+                {
+                    Vezer_lephet.Add(poz);
+                    Hely_Megjeloles(poz[0], poz[1]);
+                }
+            }
         }
 
         private void Forgatas(int x, int y)

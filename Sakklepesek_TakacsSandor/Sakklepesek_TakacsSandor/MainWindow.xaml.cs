@@ -533,6 +533,24 @@ namespace Sakklepesek_TakacsSandor
                     Hely_Megjeloles(poz[0], poz[1]);
                 }
             }
+
+            //oszlop
+            for (int i = 0; i < 8; i++)
+            {
+                poz[0] = i;
+                poz[1] = y;
+                Vezer_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
+
+            //sor
+            for (int j = 0; j < 8; j++)
+            {
+                poz[0] = x;
+                poz[1] = j;
+                Vezer_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
         }
 
         private void Forgatas(int x, int y)

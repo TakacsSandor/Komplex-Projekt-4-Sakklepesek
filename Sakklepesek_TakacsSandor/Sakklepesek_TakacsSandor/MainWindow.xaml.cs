@@ -177,7 +177,7 @@ namespace Sakklepesek_TakacsSandor
             }
         }
 
-        private void Lepes_Lehetosegek_Beszinezese(object sender,RoutedEventArgs e)
+        private void Lepes_Lehetosegek_Beszinezese(object sender, RoutedEventArgs e)
         {
             Button aktualis = sender as Button;
             int x = Holvan(aktualis)[0];
@@ -213,7 +213,6 @@ namespace Sakklepesek_TakacsSandor
                 Vezer(x, y);
             }
         }
-
         private void Vilagos_Gyalog(int x, int y)
         {
             List<int[]> Vilagos_Gyalog_lephet = new List<int[]>();
@@ -591,10 +590,12 @@ namespace Sakklepesek_TakacsSandor
             {
                 kijelolt_figura.Text = "Sötét gyalog";
             }
+            UjraSzinezes();
         }
 
-        private void ujraSzinezes_Click(object sender, RoutedEventArgs e)
+        private void UjraSzinezes()
         {
+
             for (int i = 0; i < tablaMeret; i++)
             {
                 for (int j = 0; j < tablaMeret; j++)

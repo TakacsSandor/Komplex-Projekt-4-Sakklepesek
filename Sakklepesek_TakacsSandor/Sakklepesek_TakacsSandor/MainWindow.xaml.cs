@@ -473,7 +473,32 @@ namespace Sakklepesek_TakacsSandor
                     Vezer_lephet.Add(poz);
                     Hely_Megjeloles(poz[0], poz[1]);
                 }
-            } 
+            }
+
+            //jobbra átló
+            if (x != 0 && y != 0)
+            {
+                for (int i = 0; i < x; i++)
+                {
+                    poz[0] = x - i;
+                    if ((y - i) >= 0)
+                    {
+                        poz[1] = y - i;
+                        Hely_Megjeloles(poz[0], poz[1]);
+                    }
+                }
+                int yy = y + 1;
+                for (int i = x + 1; i < 8; i++)
+                {
+                    poz[0] = i;
+                    poz[1] = yy++;
+
+                    if (poz[0] < 8 && poz[1] < 8)
+                    {
+                        Hely_Megjeloles(poz[0], poz[1]);
+                    }
+                }
+            }
 
         }
 

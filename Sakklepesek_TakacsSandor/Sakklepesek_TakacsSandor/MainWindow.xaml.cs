@@ -415,6 +415,18 @@ namespace Sakklepesek_TakacsSandor
                     }
                 }
             }
+
+            //Balra nagy átló
+            if (x == 7 && y == 0 || x == 0 && y == 7)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    poz[0] = 7 - i;
+                    poz[1] = 7 - i;
+                    Futo_lephet.Add(poz);
+                    Hely_Megjeloles(poz[0], poz[1]);
+                }
+            }
         }
 
 

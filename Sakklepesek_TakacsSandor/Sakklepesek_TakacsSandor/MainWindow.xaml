@@ -10,22 +10,22 @@
         <Label Content="Sakkfigurák:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="kijelolt_figura" HorizontalAlignment="Left" Height="23" Margin="293,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Figura neve:" HorizontalAlignment="Left" Margin="214,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Pozíció:" HorizontalAlignment="Left" Margin="10,733,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="katintott_pozicio" HorizontalAlignment="Left" Height="23" Margin="65,736,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="lepesek_helyei" HorizontalAlignment="Left" Height="60" Margin="682,700,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Content="Lehetséges lépések pozíciói:" HorizontalAlignment="Left" Margin="518,733,0,0" VerticalAlignment="Top"/>
-        <Grid Name="tabla" HorizontalAlignment="Left" Height="540"  Width="540" Margin="137,115,0,0" VerticalAlignment="Top"/>
-        <Label Content="8" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,115,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="7" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,182,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="6" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,250,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,318,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="4" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,385,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,452,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,520,0,0" VerticalAlignment="Top" Height="62"/>
-        <Label Content="1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,588,0,0" VerticalAlignment="Top" Height="62" />
+        <Label Content="Pozíció:" HorizontalAlignment="Left" Margin="10,677,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.14,0.019"/>
+        <TextBox x:Name="katintott_pozicio" HorizontalAlignment="Left" Height="23" Margin="65,677,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lepesek_helyei" HorizontalAlignment="Left" Height="60" Margin="682,640,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Lehetséges lépések pozíciói:" HorizontalAlignment="Left" Margin="518,677,0,0" VerticalAlignment="Top"/>
+        <Grid Name="tabla" HorizontalAlignment="Left" Height="540"  Width="540" Margin="137,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="8" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,81,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="7" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,149,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="6" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,217,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,285,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="4" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,353,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,421,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,489,0,0" VerticalAlignment="Top" Height="62"/>
+        <Label Content="1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="94,557,0,0" VerticalAlignment="Top" Height="62" />
 
 
-        <Label Content="8" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,120,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="8" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,81,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +35,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="7" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,182,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="7" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,149,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="6" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,250,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="6" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,217,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -55,7 +55,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,318,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,285,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -65,7 +65,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="4" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,385,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="4" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,353,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -75,7 +75,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,452,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="3" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,421,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -85,7 +85,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,520,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
+        <Label Content="2" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,489,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -95,7 +95,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,588,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5" >
+        <Label Content="1" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="682,557,0,0" VerticalAlignment="Top" Height="62" RenderTransformOrigin="0.5,0.5" >
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -106,16 +106,16 @@
             </Label.RenderTransform>
         </Label>
 
-        <Label Content="a" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="137,660,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
-        <Label Content="b" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,660,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
-        <Label Content="c" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="272,660,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
-        <Label Content="d" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="340,660,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
-        <Label Content="e" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="407,660,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
-        <Label Content="f" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="474,660,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
-        <Label Content="g" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="542,660,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
-        <Label Content="h" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="610,660,0,0" VerticalAlignment="Top" Height="40" Width="67" />
+        <Label Content="a" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="137,632,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
+        <Label Content="b" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,632,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
+        <Label Content="c" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="272,632,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
+        <Label Content="d" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="340,632,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
+        <Label Content="e" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="407,632,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
+        <Label Content="f" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="474,632,0,0" VerticalAlignment="Top" Height="40" Width="63"/>
+        <Label Content="g" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="542,632,0,0" VerticalAlignment="Top" Height="40" Width="62"/>
+        <Label Content="h" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="610,632,0,0" VerticalAlignment="Top" Height="40" Width="67" />
 
-        <Label Content="a" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="137,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
+        <Label Content="a" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="136,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -124,8 +124,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="b" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
+        <Label Content="b" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -134,8 +135,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="c" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="272,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
+        <Label Content="c" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="272,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -144,8 +146,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="d" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="340,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
+        <Label Content="d" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="340,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -154,8 +157,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="e" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="407,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
+        <Label Content="e" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="407,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -164,8 +168,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="f" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="474,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
+        <Label Content="f" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="474,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="63">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -174,8 +179,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="g" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="542,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
+        <Label Content="g" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="542,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="62">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -184,8 +190,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <Label Content="h" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="610,75,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="67" >
+        <Label Content="h" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="610,41,0,0" VerticalAlignment="Top" Height="35" RenderTransformOrigin="0.5,0.5" Width="67" >
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -194,8 +201,9 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
+
         </Label>
-        <ComboBox x:Name="figura_kivalasztas" HorizontalAlignment="Left" Margin="89,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="figura_kivalasztas_SelectionChanged">
+        <ComboBox x:Name="figura_kivalasztas" HorizontalAlignment="Left" Margin="89,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="figura_kivalasztas_SelectionChanged">
             <ComboBoxItem HorizontalAlignment="Left" Width="118" x:Name="vilagos_vezer">
                 <Image Source="Kepek/kiralyno_feher.png" Stretch="Fill" Height="30" Width="30"/>
             </ComboBoxItem>

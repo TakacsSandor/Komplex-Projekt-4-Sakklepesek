@@ -374,7 +374,7 @@ namespace Sakklepesek_TakacsSandor
             lepesek_helyei.Items.Clear();
             int[] poz = new int[2];
 
-            //jobbra nagyátló
+            //jobbra nagy átló
             if (x == 0 && y == 0 || x == 7 && y == 7)
             {
                 for (int i = 0; i < 8; i++)
@@ -383,6 +383,36 @@ namespace Sakklepesek_TakacsSandor
                     poz[1] = i;
                     Futo_lephet.Add(poz);
                     Hely_Megjeloles(poz[0], poz[1]);
+                }
+            }
+
+            //jobbra átló
+            else
+            {
+                if (x != 0 && y != 0)
+                {
+                    for (int i = 0; i < x; i++)
+                    {
+                        poz[0] = x - i;
+                        if ((y - i) >= 0)
+                        {
+                            poz[1] = y - i;
+                            Futo_lephet.Add(poz);
+                            Hely_Megjeloles(poz[0], poz[1]);
+                        }
+                    }
+                    int yy = y + 1;
+                    for (int i = x + 1; i < 8; i++)
+                    {
+                        poz[0] = i;
+                        poz[1] = yy++;
+
+                        if (poz[0] < 8 && poz[1] < 8)
+                        {
+                            Futo_lephet.Add(poz);
+                            Hely_Megjeloles(poz[0], poz[1]);
+                        }
+                    }
                 }
             }
         }

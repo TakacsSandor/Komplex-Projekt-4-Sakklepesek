@@ -200,6 +200,10 @@ namespace Sakklepesek_TakacsSandor
             {
                 Bastya(x, y);
             }
+            else if (kijelolt_figura.Text == "Világos huszár")
+            {
+                Huszar(x, y);
+            }
         }
 
         private void Vilagos_Gyalog(int x, int y)
@@ -310,6 +314,54 @@ namespace Sakklepesek_TakacsSandor
 
         }
 
+        private void Huszar(int x, int y)
+        {
+            List<int[]> Huszar_lephet = new List<int[]>();
+            x = 8 - x;
+            lepesek_helyei.Items.Clear();
+
+            int[] poz = new int[2];
+
+            poz[0] = x + 2;
+            poz[1] = y + 1;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x + 2;
+            poz[1] = y - 1;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x - 2;
+            poz[1] = y - 1;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x - 2;
+            poz[1] = y + 1;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x + 1;
+            poz[1] = y - 2;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x - 1;
+            poz[1] = y - 2;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x - 1;
+            poz[1] = y + 2;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+
+            poz[0] = x + 1;
+            poz[1] = y + 2;
+            Huszar_lephet.Add(poz);
+            Hely_Megjeloles(poz[0], poz[1]);
+        }
 
         private void Forgatas(int x, int y)
         {

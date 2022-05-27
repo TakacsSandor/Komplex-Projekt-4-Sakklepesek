@@ -98,8 +98,7 @@ namespace Sakklepesek_TakacsSandor
             Button aktualis = sender as Button;
             int x = Holvan(aktualis)[0];
             int y = Holvan(aktualis)[1];
-            x = 8 - x;
-            katintott_pozicio.Text = oszlopJelek[y] + x.ToString();
+            katintott_pozicio.Text = oszlopJelek[y] + (x+1).ToString();
         }
 
         private void GombokraKivalasztottFigura(object sender, RoutedEventArgs e)
@@ -107,6 +106,7 @@ namespace Sakklepesek_TakacsSandor
             Button aktualis = sender as Button;
             int x = Holvan(aktualis)[0];
             int y = Holvan(aktualis)[1];
+            x = 8 - x;
 
             if (kijelolt_figura.Text == "Világos vezér")
             {

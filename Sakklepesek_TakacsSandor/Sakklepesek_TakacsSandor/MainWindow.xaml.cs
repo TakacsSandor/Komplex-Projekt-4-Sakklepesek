@@ -204,6 +204,10 @@ namespace Sakklepesek_TakacsSandor
             {
                 Huszar(x, y);
             }
+            else if (kijelolt_figura.Text == "Világos futó")
+            {
+                Futo(x, y);
+            }
         }
 
         private void Vilagos_Gyalog(int x, int y)
@@ -362,6 +366,27 @@ namespace Sakklepesek_TakacsSandor
             Huszar_lephet.Add(poz);
             Hely_Megjeloles(poz[0], poz[1]);
         }
+
+        private void Futo(int x, int y)
+        {
+            List<int[]> Futo_lephet = new List<int[]>();
+            x = 8 - x;
+            lepesek_helyei.Items.Clear();
+            int[] poz = new int[2];
+
+            //jobbra nagyátló
+            if (x == 0 && y == 0 || x == 7 && y == 7)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    poz[0] = i;
+                    poz[1] = i;
+                    Futo_lephet.Add(poz);
+                    Hely_Megjeloles(poz[0], poz[1]);
+                }
+            }
+        }
+
 
         private void Forgatas(int x, int y)
         {

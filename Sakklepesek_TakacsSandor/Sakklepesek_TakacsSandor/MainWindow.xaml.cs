@@ -449,9 +449,7 @@ namespace Sakklepesek_TakacsSandor
                     Hely_Megjeloles(poz[0], poz[1]);
                 }
             }
-
         }
-
 
         private void Forgatas(int x, int y)
         {
@@ -490,6 +488,28 @@ namespace Sakklepesek_TakacsSandor
             else if (figura_kivalasztas.SelectedItem == sotet_gyalog)
             {
                 kijelolt_figura.Text = "Sötét gyalog";
+            }
+        }
+
+        private void ujraSzinezes_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < tablaMeret; i++)
+            {
+                for (int j = 0; j < tablaMeret; j++)
+                {
+                    if (j % 2 == 1 && i % 2 == 1)
+                    {
+                        mezok[i, j].Background = Brushes.White;
+                    }
+                    else if (j % 2 == 0 && i % 2 == 0)
+                    {
+                        mezok[i, j].Background = Brushes.White;
+                    }
+                    else
+                    {
+                        mezok[i, j].Background = Brushes.Black;
+                    }
+                }
             }
         }
     }

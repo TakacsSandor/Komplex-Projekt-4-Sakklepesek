@@ -427,6 +427,29 @@ namespace Sakklepesek_TakacsSandor
                     Hely_Megjeloles(poz[0], poz[1]);
                 }
             }
+
+            //Balra átló
+            int y3 = y - 1;
+            for (int i = x + 1; i < 8; i++)
+            {
+                poz[0] = i;
+                poz[1] = y3--;
+                Futo_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
+
+            int y4 = y + 1;
+            for (int i = x - 1; i >= 0; i--)
+            {
+                poz[0] = i;
+                poz[1] = y4++;
+                if (poz[1] < 8)
+                {
+                    Futo_lephet.Add(poz);
+                    Hely_Megjeloles(poz[0], poz[1]);
+                }
+            }
+
         }
 
 

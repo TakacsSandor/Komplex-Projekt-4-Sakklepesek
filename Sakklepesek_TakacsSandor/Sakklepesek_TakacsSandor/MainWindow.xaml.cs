@@ -81,7 +81,7 @@ namespace Sakklepesek_TakacsSandor
             {
                 for (int j = tablaMeret - 1; j >= 0; j--)
                 {
-                    if (mezok[i,j].Equals(gomb))
+                    if (mezok[i, j].Equals(gomb))
                     {
                         i = 7 - i;
                         koordinatak[0] = i;
@@ -196,17 +196,20 @@ namespace Sakklepesek_TakacsSandor
             {
                 Kiraly(x, y);
             }
+            else if (kijelolt_figura.Text == "Világos bástya")
+            {
+                Bastya(x, y);
+            }
         }
 
         private void Vilagos_Gyalog(int x, int y)
         {
             List<int[]> Vilagos_Gyalog_lephet = new List<int[]>();
             x = 8 - x;
-            koordinata.Text = x.ToString() + "-" + y.ToString();
             lepesek_helyei.Items.Clear();
             int[] poz = new int[2];
 
-            if (x >=1)
+            if (x >= 1)
             {
                 if (x == 1)
                 {
@@ -237,13 +240,12 @@ namespace Sakklepesek_TakacsSandor
         {
             List<int[]> Sotet_Gyalog_lephet = new List<int[]>();
             x = 8 - x;
-            koordinata.Text = x.ToString() + "- " + y.ToString();
+            lepesek_helyei.Items.Clear();
 
             int[] poz = new int[2];
 
             if (x <= 6)
             {
-                lepesek_helyei.Items.Clear();
                 poz[0] = x - 1;
                 poz[1] = y;
                 Sotet_Gyalog_lephet.Add(poz);
@@ -266,7 +268,7 @@ namespace Sakklepesek_TakacsSandor
         {
             List<int[]> Kiraly_Lephet = new List<int[]>();
             x = 8 - x;
-            koordinata.Text = x.ToString() + "- " + y.ToString();
+            lepesek_helyei.Items.Clear();
             int[] poz = new int[2];
 
             for (int i = -1; i < 2; i++)
@@ -281,6 +283,29 @@ namespace Sakklepesek_TakacsSandor
                         Hely_Megjeloles(poz[0], poz[1]);
                     }
                 }
+            }
+        }
+
+        private void Bastya(int x, int y)
+        {
+            List<int[]> Bastya_lephet = new List<int[]>();
+            x = 8 - x;
+            lepesek_helyei.Items.Clear();
+
+            int[] poz = new int[2];
+            for (int i = 0; i < 8; i++)
+            {
+                poz[0] = i;
+                poz[1] = y;
+                Bastya_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                poz[0] = x;
+                poz[1] = i;
+                Bastya_lephet.Add(poz);
+                Hely_Megjeloles(poz[0], poz[1]);
             }
 
         }
